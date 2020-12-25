@@ -10,8 +10,8 @@ import 'package:flutter/material.dart';
 
 const GRAVITY = 400.0;
 const BOOST = -250.0;
-const SIZE = 100.0;
-const COLOR = const Color(0xffddc0a3);
+const SIZE = 200.0;
+const COLOR = const Color(0xff9a3944);
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -64,10 +64,10 @@ class Santa extends AnimationComponent with Resizable {
       : super.sequenced(
           SIZE,
           SIZE,
-          'bird.png',
-          4,
-          textureWidth: 16,
-          textureHeight: 16,
+          'santa.png',
+          1,
+          textureWidth: 600,
+          textureHeight: 600,
         ) {
     this.anchor = Anchor.center;
   }
